@@ -23,6 +23,7 @@ const PartDetailPage = () => {
 
   const onSubmit = (data) => {
     console.log("Form data submitted:", data);
+    reset()
     // You can handle the form data here
   };
 

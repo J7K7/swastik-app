@@ -6,6 +6,7 @@ function CustomerDetailPage() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -36,6 +37,7 @@ function CustomerDetailPage() {
     } catch (error) {
       console.error("Customer Data Save failed:", error.message);
     }
+    reset()
   };
 
   return (

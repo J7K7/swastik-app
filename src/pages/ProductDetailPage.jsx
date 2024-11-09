@@ -39,6 +39,7 @@ function ProductDetailPage() {
         } catch (error) {
             console.error('Product Data Save failed:', error.message);
         }
+        reset()
     };    
 
     return (

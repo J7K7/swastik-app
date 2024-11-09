@@ -11,6 +11,7 @@ export default function ServiceDetailPage() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -19,6 +20,7 @@ export default function ServiceDetailPage() {
     console.log("Form data submitted:", data);
     console.log("Customer Signature:", custSignatureData);
     console.log("Engineer Signature:", engSignatureData);
+    reset()
     // Additional form submission logic here
   };
 
