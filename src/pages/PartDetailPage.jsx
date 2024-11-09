@@ -8,6 +8,7 @@ const PartDetailPage = () => {
     register,
     control,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     defaultValues: {
