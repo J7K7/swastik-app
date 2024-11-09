@@ -49,7 +49,7 @@ function ProductDetailPage() {
                     onSubmit={handleSubmit(onSubmit)} 
                     className="w-full sm:w-96 bg-white p-8 rounded-lg shadow-2xl space-y-6"
                 >
-                    <h1 className="text-orange-500 font-bold underline">
+                    <h1 className="text-orange-500 font-bold">
                         Product Details
                     </h1>
                     
@@ -183,7 +183,7 @@ function ProductDetailPage() {
                     {/* Submit Button */}
                     <button 
                         type="submit" 
-                        className="w-full py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600"
+                        className="w-full py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
                     >
                         SAVE AND NEXT
                     </button>
