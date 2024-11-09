@@ -1,11 +1,10 @@
 /* Styling for the Header */
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #d67609cc;
-    color: #fff;
+    background-color: #fff;
+    color: #e31e24;
     position: fixed;  /* Makes the header stick to the top */
     top: 0;
     left: 0;

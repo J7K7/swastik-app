@@ -42,13 +42,12 @@ function CustomerDetailPage() {
 
   return (
     <>
-      <HeadeingImage />
-      <div className="login-container px-4 py-6 flex justify-center items-start">
+      <div className="login-container px-4 py-40 flex justify-center items-start">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="w-full sm:w-96 bg-white p-8 rounded-lg shadow-2xl space-y-6"
         >
-          <h1 className="text-orange-500 font-bold">
+          <h1 className="text-2xl font-medium mb-4">
             Customer Details
           </h1>
           <div className="form-group">
@@ -56,7 +55,7 @@ function CustomerDetailPage() {
               type="text"
               id="customerName"
               placeholder="Customer Name"
-              className="w-full px-4 py-2 border-b-2 border-gray-300 focus:border-black focus:outline-none"
+              className="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
               {...register("customerName", {
                 required: "Customer Name is required",
               })}
@@ -71,8 +70,8 @@ function CustomerDetailPage() {
             <textarea
               id="customerAddress"
               placeholder="Customer Address"
-              className="w-full px-4 py-2 border-b-2 border-gray-300 focus:border-black focus:outline-none resize-none"
-              rows="1"
+              className="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
+              rows="3"
               {...register("customerAddress", {
                 required: "Address is required",
               })}
@@ -92,7 +91,7 @@ function CustomerDetailPage() {
               type="text"
               id="contactPerson"
               placeholder="Contact Person"
-              className="w-full px-4 py-2 border-b-2 border-gray-300 focus:border-black focus:outline-none"
+              className="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
               {...register("contactPerson", {
                 required: "Contact Person is required",
               })}
@@ -108,7 +107,7 @@ function CustomerDetailPage() {
               type="text"
               id="designation"
               placeholder="Designation"
-              className="w-full px-4 py-2 border-b-2 border-gray-300 focus:border-black focus:outline-none"
+              className="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
               {...register("designation", {
                 required: "Designation is required",
               })}
@@ -124,7 +123,7 @@ function CustomerDetailPage() {
               type="number"
               id="contactNumber"
               placeholder="Contact Number"
-              className="w-full px-4 py-2 border-b-2 border-gray-300 focus:border-black focus:outline-none"
+              className="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400"
               {...register("contactNumber", {
                 required: "Contact Number is required",
               })}
@@ -137,7 +136,7 @@ function CustomerDetailPage() {
           </div>
           <button
             type="submit"
-            className="mt-4 w-full px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 focus:outline-none"
+            className="mt-4 w-full px-4 py-2 bg-blue-500 text-white rounded hover:bg-green-600 focus:outline-none"
           >
             Submit
           </button>
